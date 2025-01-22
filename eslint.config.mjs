@@ -1,3 +1,4 @@
+import nextPlugin from '@next/eslint-plugin-next';
 import { ryoppippi } from '@ryoppippi/eslint-config';
 
 export default ryoppippi({
@@ -9,5 +10,14 @@ export default ryoppippi({
 				checksVoidReturn: false,
 			}],
 		},
+	},
+}, {
+	name: 'next',
+	plugins: {
+		'@next/next': nextPlugin,
+	},
+	rules: {
+		...nextPlugin.configs.recommended.rules,
+		...nextPlugin.configs['core-web-vitals'].rules,
 	},
 });
