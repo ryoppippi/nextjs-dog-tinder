@@ -1,5 +1,6 @@
 'use server';
 
+import { DOG_LIST } from '@/lib/consts';
 import { revalidatePath } from 'next/cache';
 import { cookies } from 'next/headers';
 
@@ -21,7 +22,7 @@ export async function reload() {
 
 export async function addDogImageList(src: string) {
 	const cookieStore = await cookies();
-	const dogList = cookieStore.get('dogList');
+	const dogList = cookieStore.get(DOG_LIST);
 
 	cookieStore.set('dogList', dogList?.value == null ? src : `${dogList.value},${src}`);
 	revalidatePath('/');
