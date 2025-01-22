@@ -7,9 +7,8 @@
 		"dev": "next dev --turbopack",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint && nr lint:eslint",
-		"lint:eslint": "eslint --cache .",
-		"format": "nr lint:eslint --fix"
+		"lint": "next lint",
+		"format": "nr lint --fix"
 	},
 	"dependencies": {
 		"@radix-ui/react-slot": "^1.1.1",
