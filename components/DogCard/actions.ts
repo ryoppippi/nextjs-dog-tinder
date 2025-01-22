@@ -24,6 +24,6 @@ export async function addDogImageList(src: string) {
 	const cookieStore = await cookies();
 	const dogList = cookieStore.get(DOG_LIST);
 
-	cookieStore.set('dogList', dogList?.value == null ? src : `${dogList.value},${src}`);
+	cookieStore.set(DOG_LIST, dogList?.value == null ? src : `${dogList.value},${src}`);
 	revalidatePath('/');
 }
