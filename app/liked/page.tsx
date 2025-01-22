@@ -4,6 +4,7 @@ import { DOG_LIST } from '@/lib/consts';
 import { revalidatePath } from 'next/cache';
 import { cookies } from 'next/headers';
 import Image from 'next/image';
+import { Suspense } from 'react';
 
 async function deleteDogImageList(form: FormData) {
 	'use server';
@@ -17,6 +18,24 @@ async function deleteDogImageList(form: FormData) {
 	revalidatePath('/liked');
 }
 
+function LikedDogCard({ url }: { url: string }) {
+	return (
+		<Card>
+			<CardHeader key={url}>
+				<Image src={url} alt="A cute dog" width={400} height={400} />
+			</CardHeader>
+			<CardContent>
+				<form action={deleteDogImageList}>
+					<input type="hidden" name="url" value={url} />
+					<div className="flex justify-center">
+						<Button type="submit" className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ">Delete</Button>
+					</div>
+				</form>
+			</CardContent>
+		</Card>
+	);
+}
+
 export default async function LikePage() {
 	const cookieStore = await cookies();
 	const dogList = cookieStore.get(DOG_LIST);
@@ -27,20 +46,9 @@ export default async function LikePage() {
 			<h1 className="text-2xl font-bold mt-8">Liked Dogs</h1>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
 				{dogListUrls.map(url => (
-					<Card>
-						<CardHeader key={url}>
-							<Image src={url} alt="A cute dog" width={400} height={400} />
-						</CardHeader>
-						<CardContent>
-							<form action={deleteDogImageList}>
-								<input type="hidden" name="url" value={url} />
-								<div className="flex justify-center">
-									<Button type="submit" className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ">Delete</Button>
-								</div>
-							</form>
-						</CardContent>
-
-					</Card>
+					<Suspense key={url} fallback={<div>Loading...</div>}>
+						<LikedDogCard url={url} />
+					</Suspense>
 				))}
 			</div>
 		</div>
