@@ -43,8 +43,8 @@ importers:
         specifier: ^1.49.0
         version: 1.49.0(eslint@9.26.0(jiti@2.4.2))(ts-api-utils@2.1.0(typescript@5.8.3))(typescript@5.8.3)
       '@next/eslint-plugin-next':
-        specifier: ^15.3.1
-        version: 15.3.1
+        specifier: ^15.3.2
+        version: 15.3.2
       '@ryoppippi/eslint-config':
         specifier: npm:@jsr/ryoppippi__eslint-config@^0.0.25
         version: '@jsr/ryoppippi__eslint-config@0.0.25(@eslint-react/eslint-plugin@1.49.0(eslint@9.26.0(jiti@2.4.2))(ts-api-utils@2.1.0(typescript@5.8.3))(typescript@5.8.3))(@typescript-eslint/utils@8.31.1(eslint@9.26.0(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-sfc@3.5.13)(eslint-plugin-format@1.0.1(eslint@9.26.0(jiti@2.4.2)))(eslint-plugin-react-hooks@5.2.0(eslint@9.26.0(jiti@2.4.2)))(eslint-plugin-react-refresh@0.4.20(eslint@9.26.0(jiti@2.4.2)))(eslint@9.26.0(jiti@2.4.2))(typescript@5.8.3)'
@@ -438,8 +438,8 @@ packages:
   '@next/env@15.3.1':
     resolution: {integrity: sha512-cwK27QdzrMblHSn9DZRV+DQscHXRuJv6MydlJRpFSqJWZrTYMLzKDeyueJNN9MGd8NNiUKzDQADAf+dMLXX7YQ==}
 
-  '@next/eslint-plugin-next@15.3.1':
-    resolution: {integrity: sha512-oEs4dsfM6iyER3jTzMm4kDSbrQJq8wZw5fmT6fg2V3SMo+kgG+cShzLfEV20senZzv8VF+puNLheiGPlBGsv2A==}
+  '@next/eslint-plugin-next@15.3.2':
+    resolution: {integrity: sha512-ijVRTXBgnHT33aWnDtmlG+LJD+5vhc9AKTJPquGG5NKXjpKNjc62woIhFtrAcWdBobt8kqjCoaJ0q6sDQoX7aQ==}
 
   '@next/swc-darwin-arm64@15.3.1':
     resolution: {integrity: sha512-hjDw4f4/nla+6wysBL07z52Gs55Gttp5Bsk5/8AncQLJoisvTBP0pRIBK/B16/KqQyH+uN4Ww8KkcAqJODYH3w==}
@@ -2980,7 +2980,7 @@ snapshots:
 
   '@next/env@15.3.1': {}
 
-  '@next/eslint-plugin-next@15.3.1':
+  '@next/eslint-plugin-next@15.3.2':
     dependencies:
       fast-glob: 3.3.1
 
