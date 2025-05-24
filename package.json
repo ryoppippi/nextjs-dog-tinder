@@ -28,7 +28,7 @@
 		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config@^0.0.25",
 		"@tailwindcss/postcss": "^4.1.7",
 		"@types/node": "^22.15.21",
-		"@types/react": "^19.1.4",
+		"@types/react": "^19.1.5",
 		"@types/react-dom": "^19.1.5",
 		"eslint": "^9.27.0",
 		"eslint-plugin-format": "^1.0.1",
