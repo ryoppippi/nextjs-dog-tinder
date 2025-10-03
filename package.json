@@ -22,7 +22,7 @@
 		"tailwindcss-animate": "^1.0.7"
 	},
 	"devDependencies": {
-		"@antfu/ni": "^26.0.1",
+		"@antfu/ni": "^26.1.0",
 		"@eslint-react/eslint-plugin": "^2.0.3",
 		"@next/eslint-plugin-next": "^15.5.4",
 		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config@^0.0.28",
