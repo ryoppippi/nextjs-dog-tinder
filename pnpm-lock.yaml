@@ -40,7 +40,7 @@ importers:
         specifier: ^26.1.0
         version: 26.1.0
       '@eslint-react/eslint-plugin':
-        specifier: ^2.0.5
+        specifier: ^2.0.6
         version: 2.0.6(eslint@9.36.0(jiti@2.6.0))(typescript@5.9.3)
       '@next/eslint-plugin-next':
         specifier: ^15.5.4
