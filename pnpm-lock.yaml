@@ -55,7 +55,7 @@ importers:
         specifier: ^24.7.0
         version: 24.7.0
       '@types/react':
-        specifier: ^19.2.1
+        specifier: ^19.2.2
         version: 19.2.2
       '@types/react-dom':
         specifier: ^19.2.0
