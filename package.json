@@ -24,7 +24,7 @@
 	"devDependencies": {
 		"@antfu/ni": "^26.1.0",
 		"@eslint-react/eslint-plugin": "^2.1.1",
-		"@next/eslint-plugin-next": "^15.5.4",
+		"@next/eslint-plugin-next": "^15.5.5",
 		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config@^0.0.28",
 		"@tailwindcss/postcss": "^4.1.14",
 		"@types/node": "^24.7.2",
