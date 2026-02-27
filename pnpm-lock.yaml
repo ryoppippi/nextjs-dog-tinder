@@ -70,7 +70,7 @@ importers:
         specifier: ^7.0.1
         version: 7.0.1(eslint@10.0.1(jiti@2.6.1))
       eslint-plugin-react-refresh:
-        specifier: ^0.5.1
+        specifier: ^0.5.2
         version: 0.5.2(eslint@10.0.1(jiti@2.6.1))
       postcss:
         specifier: ^8.5.6
