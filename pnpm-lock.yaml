@@ -47,7 +47,7 @@ importers:
         version: 16.1.6
       '@ryoppippi/eslint-config':
         specifier: npm:@jsr/ryoppippi__eslint-config@^0.0.28
-        version: '@jsr/ryoppippi__eslint-config@0.0.28(@eslint-react/eslint-plugin@2.13.0(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3))(@next/eslint-plugin-next@16.1.6)(@vue/compiler-sfc@3.5.24)(eslint-plugin-format@1.5.0(eslint@10.0.2(jiti@2.6.1)))(eslint-plugin-react-hooks@7.0.1(eslint@10.0.2(jiti@2.6.1)))(eslint-plugin-react-refresh@0.5.2(eslint@10.0.2(jiti@2.6.1)))(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3)'
+        version: '@jsr/ryoppippi__eslint-config@0.0.28(@eslint-react/eslint-plugin@2.13.0(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3))(@next/eslint-plugin-next@16.1.6)(@vue/compiler-sfc@3.5.24)(eslint-plugin-format@2.0.1(eslint@10.0.2(jiti@2.6.1)))(eslint-plugin-react-hooks@7.0.1(eslint@10.0.2(jiti@2.6.1)))(eslint-plugin-react-refresh@0.5.2(eslint@10.0.2(jiti@2.6.1)))(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3)'
       '@tailwindcss/postcss':
         specifier: ^4.2.1
         version: 4.2.1
@@ -64,8 +64,8 @@ importers:
         specifier: ^10.0.2
         version: 10.0.2(jiti@2.6.1)
       eslint-plugin-format:
-        specifier: ^1.5.0
-        version: 1.5.0(eslint@10.0.2(jiti@2.6.1))
+        specifier: ^2.0.0
+        version: 2.0.1(eslint@10.0.2(jiti@2.6.1))
       eslint-plugin-react-hooks:
         specifier: ^7.0.1
         version: 7.0.1(eslint@10.0.2(jiti@2.6.1))
@@ -1258,8 +1258,8 @@ packages:
     peerDependencies:
       eslint: '>=8'
 
-  eslint-plugin-format@1.5.0:
-    resolution: {integrity: sha512-jaeOKrxs79Nn6rMkLycPkLHvBVKcgsFG+RqNXb6W9iS9y2Q0NYGhFTLcDUdp5mf01X99wEkjtX2O8cumM7lNMQ==}
+  eslint-plugin-format@2.0.1:
+    resolution: {integrity: sha512-0BA65p5DAiuKtx5MmMJfPk9WaTjoHHbyVW7ZXRhaZoA1fdiMHhay9QRiDL2wr0hJWZxdF7CRThOK/70VUKVg2g==}
     peerDependencies:
       eslint: ^8.40.0 || ^9.0.0 || ^10.0.0
 
@@ -2310,7 +2310,7 @@ snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
 
-  '@antfu/eslint-config@4.19.0(@eslint-react/eslint-plugin@2.13.0(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3))(@next/eslint-plugin-next@16.1.6)(@vue/compiler-sfc@3.5.24)(eslint-plugin-format@1.5.0(eslint@10.0.2(jiti@2.6.1)))(eslint-plugin-react-hooks@7.0.1(eslint@10.0.2(jiti@2.6.1)))(eslint-plugin-react-refresh@0.5.2(eslint@10.0.2(jiti@2.6.1)))(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3)':
+  '@antfu/eslint-config@4.19.0(@eslint-react/eslint-plugin@2.13.0(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3))(@next/eslint-plugin-next@16.1.6)(@vue/compiler-sfc@3.5.24)(eslint-plugin-format@2.0.1(eslint@10.0.2(jiti@2.6.1)))(eslint-plugin-react-hooks@7.0.1(eslint@10.0.2(jiti@2.6.1)))(eslint-plugin-react-refresh@0.5.2(eslint@10.0.2(jiti@2.6.1)))(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3)':
     dependencies:
       '@antfu/install-pkg': 1.1.0
       '@clack/prompts': 0.11.0
@@ -2352,7 +2352,7 @@ snapshots:
     optionalDependencies:
       '@eslint-react/eslint-plugin': 2.13.0(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3)
       '@next/eslint-plugin-next': 16.1.6
-      eslint-plugin-format: 1.5.0(eslint@10.0.2(jiti@2.6.1))
+      eslint-plugin-format: 2.0.1(eslint@10.0.2(jiti@2.6.1))
       eslint-plugin-react-hooks: 7.0.1(eslint@10.0.2(jiti@2.6.1))
       eslint-plugin-react-refresh: 0.5.2(eslint@10.0.2(jiti@2.6.1))
     transitivePeerDependencies:
@@ -2788,9 +2788,9 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@jsr/ryoppippi__eslint-config@0.0.28(@eslint-react/eslint-plugin@2.13.0(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3))(@next/eslint-plugin-next@16.1.6)(@vue/compiler-sfc@3.5.24)(eslint-plugin-format@1.5.0(eslint@10.0.2(jiti@2.6.1)))(eslint-plugin-react-hooks@7.0.1(eslint@10.0.2(jiti@2.6.1)))(eslint-plugin-react-refresh@0.5.2(eslint@10.0.2(jiti@2.6.1)))(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3)':
+  '@jsr/ryoppippi__eslint-config@0.0.28(@eslint-react/eslint-plugin@2.13.0(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3))(@next/eslint-plugin-next@16.1.6)(@vue/compiler-sfc@3.5.24)(eslint-plugin-format@2.0.1(eslint@10.0.2(jiti@2.6.1)))(eslint-plugin-react-hooks@7.0.1(eslint@10.0.2(jiti@2.6.1)))(eslint-plugin-react-refresh@0.5.2(eslint@10.0.2(jiti@2.6.1)))(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3)':
     dependencies:
-      '@antfu/eslint-config': 4.19.0(@eslint-react/eslint-plugin@2.13.0(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3))(@next/eslint-plugin-next@16.1.6)(@vue/compiler-sfc@3.5.24)(eslint-plugin-format@1.5.0(eslint@10.0.2(jiti@2.6.1)))(eslint-plugin-react-hooks@7.0.1(eslint@10.0.2(jiti@2.6.1)))(eslint-plugin-react-refresh@0.5.2(eslint@10.0.2(jiti@2.6.1)))(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3)
+      '@antfu/eslint-config': 4.19.0(@eslint-react/eslint-plugin@2.13.0(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3))(@next/eslint-plugin-next@16.1.6)(@vue/compiler-sfc@3.5.24)(eslint-plugin-format@2.0.1(eslint@10.0.2(jiti@2.6.1)))(eslint-plugin-react-hooks@7.0.1(eslint@10.0.2(jiti@2.6.1)))(eslint-plugin-react-refresh@0.5.2(eslint@10.0.2(jiti@2.6.1)))(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3)
       defu: 6.1.4
       pkg-types: 2.3.0
     transitivePeerDependencies:
@@ -3431,7 +3431,7 @@ snapshots:
       eslint: 10.0.2(jiti@2.6.1)
       eslint-compat-utils: 0.5.1(eslint@10.0.2(jiti@2.6.1))
 
-  eslint-plugin-format@1.5.0(eslint@10.0.2(jiti@2.6.1)):
+  eslint-plugin-format@2.0.1(eslint@10.0.2(jiti@2.6.1)):
     dependencies:
       '@dprint/formatter': 0.5.1
       '@dprint/markdown': 0.21.1
