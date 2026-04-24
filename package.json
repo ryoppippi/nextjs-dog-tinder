@@ -26,7 +26,7 @@
 		"@eslint-react/eslint-plugin": "^4.2.3",
 		"@next/eslint-plugin-next": "^16.2.4",
 		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config@^0.0.28",
-		"@tailwindcss/postcss": "^4.2.2",
+		"@tailwindcss/postcss": "^4.2.3",
 		"@types/node": "^25.6.0",
 		"@types/react": "^19.2.14",
 		"@types/react-dom": "^19.2.3",
